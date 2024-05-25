@@ -1,31 +1,117 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresso amigos imaginários</title>
-    <link rel="stylesheet" href="./css/ingresso.css">
-</head>
-
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/ingresso.css" />
+    <title>Ingresso</title>
+  </head>
+  <body>
     
-
-    <div class="container">
-        <div class="image-placeholder"></div>
-
-        <div class="content">
-            <h1>SINOPSE</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum vitae leo et tincidunt. Donec
-                cursus erat eget arcu tempus vestibulum accumsan odio vestibulum maximus et tincidunt ex urna iaculis
-                dolor, sed interdum orci ligula vel.</p>
-        </div>
-        <ul class="schedule-list">
-            <li><span class="time">18:30</span> shopping tambore</li>
-            <li><span class="time">18:30</span> shopping tambore</li>
-            <li><span class="time">18:30</span> shopping tambore</li>
-        </ul>
+    <div class="movie-container">
+      <label>Ingresso:</label>
+      <select id="movie">
+        <option value="220">Inteira(R$50,00)</option>
+        <option value="320">Meia (R$25,00)</option>
+        <option value="250">Idoso (R$20,00)</option>
+        <option value="260">Bradesco(R$00,00)</option>
+      </select>
     </div>
-</body>
 
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Vazia</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selecionada</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Ocupado</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+
+      </div>
+    </div>
+
+    <p class="text">
+        Você selecionou <span id="count">0</span> ugares por um preço de R$<span
+        id="total"
+        >0</span
+      >
+    </p>
+    <script src="./js/ingresso.js"></script>
+  </body>
 </html>
