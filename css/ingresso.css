@@ -173,3 +173,26 @@ header nav ul li a:hover {
 
 /* Existing CSS styles */
 /* Add other existing CSS styles below */
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .seat {
+    background-color: #444451;
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .row-label {
+    margin-left: 20px;  /* Ajuste aqui para aumentar o espaço */
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

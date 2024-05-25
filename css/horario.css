@@ -17,7 +17,7 @@
         
 
         .header {
-            background-color: #333;
+            background-color: #ffffff;
             padding: 10px 20px;
             color: white;
         }
@@ -44,9 +44,9 @@
             max-width: 1200px;
             margin: 0 auto; /* Centraliza horizontalmente */
             padding: 20px;
-            border: 2px solid #000;
+            border: 2px solid #000000;
             box-sizing: border-box;
-            background-color: #fff;
+            background-color: #ffffff00;
             align-items: center; /* Centraliza verticalmente */
             justify-content: center; /* Centraliza horizontalmente */
         }
@@ -70,6 +70,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            color: #fcfcfc;
         }
 
         .schedule-list {
@@ -134,8 +135,8 @@
             display: inline-block;
             width: 30px;
             height: 30px;
-            background-color: #ddd;
-            border: 1px solid #aaa;
+            background-color: #dddddd00;
+            border: 1px solid #00000000;
             margin: 5px;
             cursor: pointer;
         }
