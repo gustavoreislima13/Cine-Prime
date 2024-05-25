@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #242333;
+  background-color: #000000;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -113,3 +113,63 @@ p.text{
 p.text span{
     color: rgb(158, 248, 158);
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333ad;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px rgba(128, 128, 128, 0);
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.movie-container {
+    margin: 80px 20px 20px; /* Adjusted to account for the fixed header */
+}
+
+/* Existing CSS styles */
+/* Add other existing CSS styles below */
